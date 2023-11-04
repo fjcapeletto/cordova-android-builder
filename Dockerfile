@@ -32,7 +32,7 @@ RUN apt -qq install -y nodejs
 RUN npm i -g cordova@${CORDOVA_VERSION}
 
 # Gradle
-RUN curl -so /tmp/gradle-${GRADLE_VERSION}-bin.zip https://downloads.gradle-dn.com/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
+RUN curl -so /tmp/gradle-${GRADLE_VERSION}-bin.zip https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
     unzip -qd /opt /tmp/gradle-${GRADLE_VERSION}-bin.zip && \
     ln -s /opt/gradle-${GRADLE_VERSION} /opt/gradle
 
